@@ -6,6 +6,13 @@ body{
 	padding: 0;
 	margin: 0;
 }
+.element-animation{
+	opacity: 0;
+}
+.element-animation.element-show{
+	opacity: 1;
+	transition: opacity 2.5s;
+}
 .white{
 	color: #F7F7F3;
 	line-height: 40px;
@@ -19,6 +26,13 @@ body{
 }
 .header{
 	background-color: #FFFFFF;
+	top: -100px;
+	z-index: 10;
+	width: 100%;
+}
+.header.fixed{
+	position: fixed;
+	transform: translateY(100px);
 }
 .header-line{
 	max-width: 1920px;
@@ -438,6 +452,8 @@ ul,li {
 .circle{
 	margin-left: 40px;
 	margin-right: 1.5vw;
+	margin-top:auto;
+	margin-bottom: auto;
 	height: 16px;
 	width: 16px;
 }
@@ -523,6 +539,7 @@ ul,li {
 .sticks{
 	width: 590px;
 	height: 650px;
+	margin-left: auto;
 }
 .valign{
 	margin-top: 240px;
@@ -596,6 +613,7 @@ ul,li {
 	width: 32px;
 	height: 32px;
 	margin-bottom: 32px;
+	margin-right: 2vw;
 }
 .footer-services{
 	display: flex;
@@ -1409,5 +1427,9 @@ ul,li {
 	}
 	.block{
 		font-size: 14px;
+	}
+	.height{
+		line-height: 24px;
+		width: 200px;
 	}
 }
