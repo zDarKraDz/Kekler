@@ -36,7 +36,7 @@ document.onscroll = function(){
 /*закрытие блока*/
 var krestik = document.getElementById('krestik');
 var adv = document.getElementById('header-line');
-document.onclick = function(){
+krestik.onclick = function(){
     krestik.style.display = 'none';
     adv.style.display = 'none';
 };
